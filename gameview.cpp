@@ -1,3 +1,4 @@
+#include <QTimer>
 #include "gameview.h"
 
 
@@ -22,4 +23,6 @@ GameView::GameView()
     this->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     this->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
+    // Add food and enemies
+    objects = new LevelObjects();
 }

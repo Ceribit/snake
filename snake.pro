@@ -9,7 +9,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     gameview.cpp \
-    player.cpp
+    player.cpp \
+    levelobjects.cpp \
+    snakeitem.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -24,4 +26,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 HEADERS += \
     gameview.h \
-    player.h
+    player.h \
+    levelobjects.h \
+    snakeitem.h

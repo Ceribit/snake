@@ -6,6 +6,7 @@
 #include <QGraphicsObject>
 
 #include "player.h"
+#include "levelobjects.h"
 
 class GameView: public QGraphicsView
 {
@@ -16,7 +17,7 @@ public:
     //Game variables
     QGraphicsScene* scene;
     Player* player;
-
+    LevelObjects* objects;
 };
 
 #endif // GAMEVIEW_H

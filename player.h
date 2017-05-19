@@ -9,6 +9,7 @@ class Player: public QObject, public QGraphicsRectItem{
     Q_OBJECT
 public:
     void keyPressEvent(QKeyEvent* event);
+    void keyReleaseEvent(QKeyEvent* event);
     Player();
 private:
     int xvelocity;
