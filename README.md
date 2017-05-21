@@ -2,10 +2,8 @@
 Snake game implemented in C++ with Qt  
 
 Current features:  
-  -Box that moves with arrow keys  
+  -A snake that grows longer when eatting food
     
 Future features:  
-  -Food to grow the tail and enemies  
-  -Game border that prevents you from leaving the screen  
-  -Levels  
-  -Health  
+  -Losing the game when eatting a red block
+  -Balanced food and enemy generation that changes with time
