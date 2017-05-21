@@ -16,6 +16,7 @@ GameView::GameView()
 
     // Set up the player
     player->setRect(scene->width()/2, scene->height()/2, 10,10);
+    player->setBrush(QColor(0, 0, 0, 150));
     player->setFlag(QGraphicsItem::ItemIsFocusable);
     player->setFocus();
 

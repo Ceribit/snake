@@ -9,7 +9,7 @@ LevelObjects::LevelObjects()
 {
     QTimer *foodTimer = new QTimer(), *enemyTimer = new QTimer();
     QObject::connect(foodTimer, SIGNAL(timeout()), this, SLOT(spawnFood()));
-    foodTimer->start(5000);
+    foodTimer->start(1000);
     QObject::connect(enemyTimer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
     enemyTimer->start(7500);
 }

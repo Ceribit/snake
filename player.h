@@ -4,16 +4,25 @@
 #include <QObject>
 #include <QGraphicsRectItem>
 #include <QKeyEvent>
+#include "SnakeNode.h"
 
 class Player: public QObject, public QGraphicsRectItem{
+
     Q_OBJECT
+
 public:
-    void keyPressEvent(QKeyEvent* event);
-    void keyReleaseEvent(QKeyEvent* event);
     Player();
+    void keyPressEvent(QKeyEvent* event);
+    void addTail();
+    void updateTail();
+    void updateTailEnd(SnakeNode*);
+    void checkCollisions();
+    void outOfBounds();
 private:
     int xvelocity;
     int yvelocity;
+    SnakeNode *head;
+
 public slots:
     void move();
 };

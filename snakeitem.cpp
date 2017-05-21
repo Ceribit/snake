@@ -11,6 +11,8 @@ SnakeItem::SnakeItem(bool isFood)
     int randWidth = rand()%(static_cast<int>(game->scene->width()));
     int randHeight = rand()%(static_cast<int>(game->scene->height()));
     setRect(randWidth,randHeight,10,10);
+
+    // Set attribute to either a food or enemy
     if(isFood){
         food = true;
         enemy = false;
@@ -22,3 +24,14 @@ SnakeItem::SnakeItem(bool isFood)
         this->setBrush(QColor(255, 0, 0, 150));
     }
 }
+
+bool SnakeItem::isFood()
+{
+    return food;
+}
+
+bool SnakeItem::isEnemy()
+{
+    return enemy;
+}
+

@@ -28,4 +28,5 @@ HEADERS += \
     gameview.h \
     player.h \
     levelobjects.h \
-    snakeitem.h
+    snakeitem.h \
+    snakenode.h
